@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/public/css/login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <form class="loginForm" action="/login" method="post">
+      <div class="panel">
+        <h2>Login</h2>
+
+        <div class="credentials">
+          <div class="user">
+            <p>Username</p>
+            <i class="fa-solid fa-user" style="color: black"></i>
+            <input
+              type="text"
+              placeholder="  Type your username"
+              required
+              name="username"
+            />
+          </div>
+
+          <div class="password">
+            <p>Password</p>
+            <i class="fa-solid fa-lock" style="color: black"></i>
+            <input
+              type="password"
+              placeholder="  Type your password"
+              required
+              name="password"
+            />
+          </div>
+        </div>
+
+        <button class="loginButton" type="submit">Login</button>
+
+        <span class="or"
+          >or <br /><br /><a href="/signup" class="signupLink">Sign Up</a></span
+        >
+      </div>
+    </form>
+  </body>
+</html>

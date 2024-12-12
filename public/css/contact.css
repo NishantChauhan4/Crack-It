@@ -1,0 +1,26 @@
+body {
+  background: url(/public/images/aboutus.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.Contact {
+  color: whitesmoke;
+  font-size: 60px;
+  padding-left: 25px;
+  padding-top: 40px;
+}
+.para {
+  font-weight: 400;
+  text-align: center;
+  margin: 60px 20px 10px 20px;
+  font-size: 25px;
+  color: whitesmoke;
+  text-shadow: 0px 0px 10px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0),
+    0px 0px 10px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0),
+    0px 0px 10px rgb(0, 0, 0), 0px 0px 10px rgb(0, 0, 0);
+}

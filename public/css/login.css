@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("/public/images/login.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.loginForm {
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  height: 85%;
+  width: 30%;
+}
+
+.panel {
+  border: none;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
+}
+
+.panel h2 {
+  margin-top: 20px;
+}
+.credentials {
+  width: 85%;
+  height: 35%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.credentials p {
+  font-size: 1rem;
+}
+
+.credentials i {
+  margin-top: 5px;
+}
+
+.credentials input {
+  border: none;
+  width: 90%;
+  height: 25px;
+  border-radius: 10px;
+}
+
+.user {
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.password {
+  margin-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.panel .loginButton {
+  text-decoration: none;
+  color: snow;
+  margin-top: 30px;
+  padding: 10px 120px 10px 120px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  font-size: 1.4rem;
+}
+
+.panel .loginButton:hover {
+  background-color: grey;
+}
+
+.or {
+  margin-top: 30px;
+  text-align: center;
+}
+.signupLink {
+  color: whitesmoke;
+}
+.signupLink:hover {
+  color: black;
+}

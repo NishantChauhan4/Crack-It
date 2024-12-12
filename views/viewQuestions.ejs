@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/public/css/viewQuestions.css" />
+    <title>View Questions</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <h1 class="navbarHeading">
+          Filter according to your need to find questions
+        </h1>
+        <div class="links">
+          <a class="logoutButton" href="/logout">Logout</a>
+        </div>
+      </nav>
+
+      <form action="/viewQuestions" method="post">
+        <fieldset>
+          <legend>Years of experience</legend>
+
+          <label for="0-3 Years">0-3 Years</label>
+          <input
+            id="0-3 Years"
+            type="radio"
+            value="0-3 Years"
+            name="experience"
+            checked
+          />
+
+          <label for="3-5 Years">3-5 Years</label>
+          <input
+            id="3-5 Years"
+            type="radio"
+            value="3-5 Years"
+            name="experience"
+          />
+
+          <label for="5-7 Years">5-7 Years</label>
+          <input
+            id="5-7 Years"
+            type="radio"
+            value="5-7 Years"
+            name="experience"
+          />
+
+          <label for="7+ Years">7+ Years</label>
+          <input
+            id="7+ Years"
+            type="radio"
+            value="7+ Years"
+            name="experience"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Role</legend>
+
+          <label for="frontend">Frontend</label>
+          <input
+            id="frontend"
+            type="radio"
+            value="Frontend"
+            name="role"
+            checked
+          />
+
+          <label for="backend">Backend</label>
+          <input id="backend" type="radio" value="Backend" name="role" />
+
+          <label for="fullstack">Full Stack</label>
+          <input id="fullstack" type="radio" value="Fullstack" name="role" />
+        </fieldset>
+
+        <button class="submitButton" type="submit">Submit</button>
+      </form>
+    </main>
+
+    <ul>
+      <%questionsFound.forEach(element => { %>
+      <li class="questionFound">
+        <h2 class="experience">Eperience : <%=element.experience%></h2>
+        <h2 class="role">Role : <%=element.role%></h2>
+        <br />
+        <span class="questions"><%=element.questions%></span>
+      </li>
+      <%});%>
+    </ul>
+  </body>
+</html>
